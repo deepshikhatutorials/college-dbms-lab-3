@@ -100,4 +100,31 @@ Stores enrollment details of students in courses.
 3. Navigate to the folder containing `database.sql`
 4. Run the file using:
    ```sql
+
+
+    # DBMS Lab 6
+
+Topic: Aggregate Functions, GROUP BY, HAVING and JOIN Queries
+
+SELECT COUNT(*) FROM Student;
+SELECT COUNT(*) FROM Faculty;
+SELECT COUNT(*) FROM Course;
+SELECT MAX(CREDITS) FROM Course;
+SELECT MIN(CREDITS) FROM Course;
+
+SELECT DEPARTMENT_ID, COUNT(*) FROM Student GROUP BY DEPARTMENT_ID;
+SELECT SEMESTER, COUNT(*) FROM Enrollment GROUP BY SEMESTER;
+SELECT GRADE, COUNT(*) FROM Enrollment GROUP BY GRADE;
+
+SELECT c.COURSE_NAME, COUNT(e.STUDENT_ID)
+FROM Course c JOIN Enrollment e
+ON c.COURSE_ID = e.COURSE_ID
+GROUP BY c.COURSE_NAME;
+
+SELECT f.NAME, COUNT(c.COURSE_ID)
+FROM Faculty f JOIN Course c
+ON f.FACULTY_ID = c.FACULTY_ID
+GROUP BY f.NAME;
+
+COMMIT;
    @database.sql

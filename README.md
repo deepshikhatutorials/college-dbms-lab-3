@@ -132,7 +132,7 @@ COMMIT;
 
 
 
-  ###DBMS Lab 7
+  # **DBMS Lab 7**
 
 📌 Overview
 

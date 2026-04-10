@@ -128,3 +128,67 @@ GROUP BY f.NAME;
 
 COMMIT;
    @database.sql
+
+
+
+
+  ###DBMS Lab 7
+
+📌 Overview
+
+This lab focuses on the use of SQL Aggregate Functions, GROUP BY, HAVING clause, and JOIN operations. The queries are designed to analyze and summarize data from a relational database.
+
+---
+
+🛠️ Topics Covered
+
+- Aggregate Functions (COUNT, MAX, MIN)
+- GROUP BY Clause
+- HAVING Clause
+- SQL JOIN (INNER JOIN)
+- Data Analysis using SQL Queries
+
+---
+
+📂 Tables Used
+
+- Student
+- Faculty
+- Course
+- Enrollment
+
+---
+
+🔍 Queries Implemented
+
+1. Count total number of students, faculty, and courses
+2. Find maximum and minimum credits of courses
+3. Group students, faculty, and courses by department
+4. Count enrollments by semester
+5. Count students based on grades
+6. Apply HAVING clause for filtering grouped data
+7. Perform JOIN operations to combine multiple tables
+8. Find number of students enrolled in each course
+9. Find faculty handling multiple courses
+10. Retrieve maximum grade for each course
+
+---
+
+⚙️ Key Concepts
+
+- GROUP BY is used to group rows with similar values
+- HAVING is used to filter grouped results
+- Aggregate functions help in data summarization
+- JOIN is used to combine data from multiple tables
+
+---
+
+✅ Result
+
+All queries were successfully executed and produced the expected output based on the given dataset.
+
+---
+
+📎 Conclusion
+
+This lab helped in understanding how to perform data aggregation, grouping, and filtering in SQL. It also demonstrated how multiple tables can be combined using JOIN operations for better data analysis.
